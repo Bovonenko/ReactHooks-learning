@@ -20,7 +20,7 @@ const UseCallback = () => {
                 value={number}
                 type="number"
                 onChange={e => setNumber(parseInt(e.target.value))} />
-            <button onClick={() => setDark(prevDark => !prevDark)}>Change Theme</button>
+            <button className="btn btn-success" onClick={() => setDark(prevDark => !prevDark)}>Change Theme</button>
             <List getItems={getItems} />
         </div>
     )
