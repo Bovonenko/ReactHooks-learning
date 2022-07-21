@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import ReactDOM from 'react-dom/client';
+
 import App from './App';
-// import UseCallback from './UseCallback';
+import './index.css';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-ReactDOM.render(
-    <App/>,
-    // <UseCallback/>,
-  document.getElementById('root')
-);
+ReactDOM
+  .createRoot(document.getElementById('root'))
+  .render(
+    <App/>
+  );
 
 
